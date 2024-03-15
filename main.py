@@ -18,13 +18,13 @@ with open("output.txt", "w") as output_file:
         portal_amount = ic(int(input_data[start + 2].strip()))
         position = start_pos
         while True:
-            portals = list(
-                map(
-                    lambda string_line: tuple(map(lambda x: int(x),
-                    string_line.strip().split(' '))),
+            portals = list(map(
+                    lambda string_line: tuple(map(
+                        lambda x: int(x),
+                        string_line.strip().split(' ')
+                    )),
                     input_data[start + 3:start + 3 + portal_amount]
-                )
-            )
+            ))
             for i, portal_pairs in enumerate(portal
                 distance = dist(position, portal_in)
                 if prepona < shortest:
